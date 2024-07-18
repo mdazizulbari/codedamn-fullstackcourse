@@ -53,3 +53,8 @@ myFriends.pop()
 console.log(myFriends)
 myFriends[0] = "Rafinnnnnn"
 console.log(myFriends)
+
+
+for(let number = 0; number < 5; number++){
+    console.log(number)
+}
