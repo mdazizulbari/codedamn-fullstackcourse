@@ -58,3 +58,51 @@ console.log(myFriends)
 for(let number = 0; number < 5; number++){
     console.log(number)
 }
+
+
+let evenNumbers = []
+let oddNumbers = []
+for(let i=0; i<20; i++){
+    if(i % 2 === 0){
+        evenNumbers.push(i)
+    } else {
+        oddNumbers.push(i)
+    }
+}
+console.log(evenNumbers)
+console.log(oddNumbers)
+console.log(evenNumbers, oddNumbers)
+
+function skipNumber(number){
+    let evenNumbers2 = []
+    for(let i=0; i<20; i++){
+        if(i % 2 === 0 && i !== number){
+            evenNumbers2.push(i)
+        }
+    } return evenNumbers2
+}
+console.log(skipNumber(2))
+
+function skipNumber2(number){
+    let evenNumbers3 = []
+    for(let i=0; i<20; i++){
+        if(i % 2 === 1){
+            continue
+        } if(i === number){
+            continue
+        } evenNumbers3.push(i)
+    } return evenNumbers3
+}
+console.log(skipNumber2(2))
+
+function breakNumber(number){
+    let evenNumbers4 = []
+    for(let i=0; i<20; i++){
+        if(i === number){
+            break
+        } if(i % 2 === 1){
+            continue
+        } evenNumbers4.push(i)
+    } return evenNumbers4
+}
+console.log(breakNumber(10))
