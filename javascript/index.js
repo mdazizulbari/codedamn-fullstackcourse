@@ -14,3 +14,20 @@ function addsToMyAge(incrementBy, multiplyBy) {
 }
 const myNewAge = addsToMyAge(5,2)
 console.log(myAge, myNewAge)
+
+function canIGetLicence(age, bribe, whitelisted){
+    if(!whitelisted){
+        console.log("You are not in the whitelist to get the licence.")
+    }
+    if((age >= 18 && bribe >=100) || bribe > 500){
+        console.log("You can get Licence.")
+    }
+    else if(age >= 18){
+        console.log("Son, you need to give more money.")
+    }
+    else{
+        console.log("Get older, son.")
+    }
+}
+canIGetLicence(13, 830, true)
+console.log(canIGetLicence)
