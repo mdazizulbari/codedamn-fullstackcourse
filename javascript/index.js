@@ -7,7 +7,7 @@ let undefinedValue
 console.log(friends)
 
 
-
+// Function basics
 const myAge = 19
 let sum = 200
 let totalCount = 5
@@ -18,7 +18,7 @@ const myNewAge = addsToMyAge(5,2)
 console.log(myAge, myNewAge)
 
 
-
+// Intermidiate Function
 function canIGetLicence(age, bribe, whitelisted){
     if(!whitelisted){
         console.log("You are not in the whitelist to get the licence.")
@@ -38,6 +38,7 @@ console.log(canIGetLicence)
 
 
 
+// Editing Function
 let myFriends = ["Rafin"]
 function addToMyFriends(friend){
     myFriends.push(friend)
@@ -55,11 +56,13 @@ myFriends[0] = "Rafinnnnnn"
 console.log(myFriends)
 
 
+// For Loops
 for(let number = 0; number < 5; number++){
     console.log(number)
 }
 
 
+// Break and continume in Loops
 let evenNumbers = []
 let oddNumbers = []
 for(let i=0; i<20; i++){
@@ -121,6 +124,7 @@ console.log(breakNumber(10))
 
 
 
+// Objects
 const myObject = {
     keyname : {
         keyname3 : "value3"
@@ -128,4 +132,33 @@ const myObject = {
     keyname2 : "value2"
 }
 console.log(myObject["keyname"])
+console.log(myObject.keyname)
 console.log(myObject)
+
+
+
+// Call by Referance
+const myProfile = {
+    name : "Bari",
+    age : 19,
+}
+const secondProfile = {
+    name : "Rana",
+    age : 34,
+}
+function mutate(obj){
+    obj.age++
+    console.log(obj.age)
+}
+mutate(secondProfile)
+console.log(secondProfile.age)
+// the number gets increased for the object
+
+function primitiveMutate(primitive){
+    primitive ++
+    console.log(primitive)
+}
+const num = 100
+primitiveMutate(num)
+console.log(num)
+// the number is only increased inside of the function for variable
