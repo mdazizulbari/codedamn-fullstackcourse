@@ -1,0 +1,34 @@
+* {margin: 0;}
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+nav ul {
+    display: flex;
+    justify-content: end;
+}
+nav ul li {
+    list-style: none;
+    padding: 10px;
+    margin: 2px;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+#logo {
+    width: 500px;
+    height: 200px;
+    background-color: orange;
+}
+
+.layer {
+    background-color: gray;
+    padding: 10px;
+    
+}
