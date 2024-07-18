@@ -1,5 +1,9 @@
 * {margin: 0;}
-body {background-color: black;}
+body {
+    background-color: black;
+    position: relative;
+    height: 200vh;
+}
 
 .newLayout {
     display: flex;
@@ -25,6 +29,7 @@ body {background-color: black;}
     margin: 10px;
     width: 200px;
     height: 200px;
+    /* position: relative; */
 }
 .clild {
     background-color: yellow;
@@ -40,3 +45,21 @@ body {background-color: black;}
 #seven {justify-content: center;align-items: flex-start;}
 #eight {justify-content: flex-start ;align-items: flex-end;}
 #nine {justify-content: flex-end;align-items: flex-start;}
+
+#ten {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+}
+#eleven {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+}
+#tweleve {
+    position: sticky;
+    top: 0;
+}
+#parent_tweleve {
+    height: 300px;
+}
