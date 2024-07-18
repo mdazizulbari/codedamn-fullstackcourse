@@ -32,11 +32,11 @@ body {background-color: black;}
     height: 50px;
 }
 #one {justify-content: center;align-items: center;}
-#two {justify-content: center;align-items: flex-start;}
-#three {justify-content: flex-start;align-items: center;}
+#two {justify-content: flex-end;align-items: flex-end;}
+#three {justify-content: flex-start;align-items: flex-start;}
 #four {justify-content: flex-end;align-items: center;}
 #five {justify-content: center;align-items: flex-end;}
-#six {justify-content: flex-start;align-items: flex-start;}
-#seven {justify-content: flex-start;align-items: flex-end;}
-#eight {justify-content: flex-end;align-items: flex-end;}
+#six {justify-content: flex-start;align-items: center;}
+#seven {justify-content: center;align-items: flex-start;}
+#eight {justify-content: flex-start ;align-items: flex-end;}
 #nine {justify-content: flex-end;align-items: flex-start;}
