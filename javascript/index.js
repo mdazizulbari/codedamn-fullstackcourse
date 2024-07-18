@@ -6,3 +6,11 @@ let undefinedValue
 // value can be defined later
 console.log(friends)
 
+const myAge = 19
+let sum = 200
+let totalCount = 5
+function addsToMyAge(incrementBy, multiplyBy) {
+    return (myAge + incrementBy) * multiplyBy
+}
+const myNewAge = addsToMyAge(5,2)
+console.log(myAge, myNewAge)
