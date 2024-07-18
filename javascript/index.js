@@ -118,3 +118,14 @@ function breakNumber(number){
     } 
 }
 console.log(breakNumber(10))
+
+
+
+const myObject = {
+    keyname : {
+        keyname3 : "value3"
+    },
+    keyname2 : "value2"
+}
+console.log(myObject["keyname"])
+console.log(myObject)
