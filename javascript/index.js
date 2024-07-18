@@ -6,6 +6,8 @@ let undefinedValue
 // value can be defined later
 console.log(friends)
 
+
+
 const myAge = 19
 let sum = 200
 let totalCount = 5
@@ -14,6 +16,8 @@ function addsToMyAge(incrementBy, multiplyBy) {
 }
 const myNewAge = addsToMyAge(5,2)
 console.log(myAge, myNewAge)
+
+
 
 function canIGetLicence(age, bribe, whitelisted){
     if(!whitelisted){
@@ -31,3 +35,21 @@ function canIGetLicence(age, bribe, whitelisted){
 }
 canIGetLicence(13, 830, true)
 console.log(canIGetLicence)
+
+
+
+let myFriends = ["Rafin"]
+function addToMyFriends(friend){
+    myFriends.push(friend)
+    // myFriends.unshift(friend)
+    console.log(myFriends)
+}
+addToMyFriends("Sufiyan")
+addToMyFriends("Rami")
+addToMyFriends("Rohan")
+myFriends.pop()
+console.log(myFriends)
+myFriends.pop()
+console.log(myFriends)
+myFriends[0] = "Rafinnnnnn"
+console.log(myFriends)
