@@ -311,3 +311,47 @@ const es6function2 = (arrgument1, arrgument2) => {
     return arrgument1 * arrgument2
 }
 console.log(es6function2(200, 300))
+
+
+
+
+
+// Array Functions
+const array5 = [1,2,3,4,5,6,7,8]
+const newMappedArray_old = []
+for(let i=0; i>array5.length; i++){
+    const currentelement = array5[i]
+    newMappedArray_old.push(currentelement ** 2)
+}
+
+// const newMappedArray = array5.map(function(element) {
+//     console.log(element);
+//     return element ** 2;
+// })
+const newMappedArray = array5.map(element => element ** 2)
+console.log(array5, newMappedArray)
+
+const friends1 = [
+    {
+        name: "x",
+        age: 17,
+        college: "BN"
+    },
+    {
+        name: "y",
+        age: 21,
+    },
+    {
+        name: "z",
+        age: 22,
+    }
+]
+const filteredArray = friends1.filter(element => element.age > 18)
+console.log(friends1, filteredArray)
+
+const findX = friends1.find(element => element.name === "x")
+console.log(findX)
+
+friends1.forEach(friends1 => {
+    console.log(friends1)
+})
