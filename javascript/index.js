@@ -266,3 +266,27 @@ function decreaseCounter(){
 }
 increaseBtn.addEventListener("click", increaseCounter)
 decreaseBtn.addEventListener("click", decreaseCounter)
+
+// es6 destructuring
+const array1 = [1,2,3]
+const array2 = [4,5,6]
+const array3 = [...array1, ...array2]
+const array4 = [array1, ...array2]
+console.log(array3, array4)
+
+const keyname = "cool"
+const obj1 = {
+    name: "Bari",
+    age: 19,
+    keyname,
+    someOtherKey: 100,
+}
+const obj2 = {
+    name: "Rana",
+    age: "36",
+}
+const obj3 = {
+    ...obj1, ...obj2,
+}
+    // obj1 overwrote obj2
+console.log(obj3)
