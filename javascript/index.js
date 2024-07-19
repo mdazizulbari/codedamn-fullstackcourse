@@ -251,7 +251,8 @@ console.log(increaseCounter)
 function decreaseCounter(){
     const li = ulElement.querySelector('[data-counter="'+counter+'"]')
     const number = parseInt(li.getAttribute("data-counter"), 10)
-    li.remove()
+    if(number%2 === 0){
+      li.remove()}
     counter--
     counterElement.innerText = counter}
 increaseBtn.addEventListener("click", increaseCounter)
