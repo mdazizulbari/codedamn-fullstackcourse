@@ -187,6 +187,7 @@ console.log(para, para2)
 
 
 // Event Listeners (Counter)
+
 // const increaseBtn = document.querySelector("#increase")
 // let counter = 0
 // function increaseCounter(){
@@ -204,13 +205,47 @@ console.log(para, para2)
 // }
 // decreaseBtn.addEventListener("click", decreaseCounter)
 
+// const increaseBtn = document.querySelector("#increase")
+// const decreaseBtn = document.querySelector("#decrease")
+// const counterElement = document.getElementById("counter")
+// let counter = 0
+// function increaseCounter(){
+//     counter++
+//     counterElement.innerText = counter}
+// function decreaseCounter(){
+//     counter--
+//     counterElement.innerText = counter}
+// increaseBtn.addEventListener("click", increaseCounter)
+// decreaseBtn.addEventListener("click", decreaseCounter)
+
+
+
+// Create Element
 const increaseBtn = document.querySelector("#increase")
-const decreaseBtn = document.querySelector("#decrease")
+const decreaseBtn = document.getElementById("decrease")
 const counterElement = document.getElementById("counter")
+const ulElement = document.getElementById("listItems")
 let counter = 0
 function increaseCounter(){
     counter++
-    counterElement.innerText = counter}
+    counterElement.innerText = counter
+    // // Create an Element
+    // const li = document.createElement("li")
+    // const textNode = document.createTextNode("Sentence " + counter)
+    // li.appendChild(textNode)
+    // // Append an Element
+    // ulElement.appendChild(li)
+            // const li = document.createElement("li")
+            // const b = document.createElement("b")
+            // const textNode = document.createTextNode("Sentence ")
+            // const textNode2 = document.createTextNode(counter)
+            // b.appendChild(textNode)
+            // li.appendChild(b)
+            // li.appendChild(textNode2)
+            const li = document.createElement("li")
+            li.innerHTML = "<b>Sentence</b> " + counter
+            ulElement.appendChild(li)
+}
 function decreaseCounter(){
     counter--
     counterElement.innerText = counter}
