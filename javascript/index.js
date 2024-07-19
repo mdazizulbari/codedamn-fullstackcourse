@@ -169,3 +169,12 @@ console.log(num)
 const heading = document.querySelector("#hello")
 heading.innerText = "Hello Bari"
 console.log(heading)
+
+
+// Querey Selector All
+const allListItems = document.querySelectorAll("ul li")
+for(i=0; i<allListItems.length; i++){
+    const listItems = allListItems[i]
+    listItems.innerText = "Power of All"
+}
+console.log|(allListItems)
