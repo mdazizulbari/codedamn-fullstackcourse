@@ -162,3 +162,10 @@ const num = 100
 primitiveMutate(num)
 console.log(num)
 // the number is only increased inside of the function for variable
+
+
+
+// Querey Selector
+const heading = document.querySelector("#hello")
+heading.innerText = "Hello Bari"
+console.log(heading)
