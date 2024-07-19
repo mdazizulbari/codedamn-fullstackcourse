@@ -290,3 +290,24 @@ const obj3 = {
 }
     // obj1 overwrote obj2
 console.log(obj3)
+
+
+
+// es6 arrow functions
+const increaseBtn2 = document.getElementById("increase")
+increaseBtn2.addEventListener('click', () => {
+    console.log("Increase Button is clicked!")
+})
+function oldfunction(arrgument){
+    return arrgument ** 2
+}
+const old = oldfunction(100)
+console.log(old)
+
+const es6function = arrgument => arrgument ** 2
+const es6 = es6function(100)
+console.log(es6)
+const es6function2 = (arrgument1, arrgument2) => {
+    return arrgument1 * arrgument2
+}
+console.log(es6function2(200, 300))
