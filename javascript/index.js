@@ -368,3 +368,14 @@ const aboutMeOld = "My name is "+person.name+" and I am "+person.age+" years old
 const aboutMeNew = `My name is ${person.name} and I am ${person.age} years old.`
 console.log(aboutMeOld)
 console.log(aboutMeNew)
+
+
+
+// Promice and Fetch
+const promiceObject = fetch('data.json')
+const promiceObjectAgain = promiceObject.then(response => {
+    const promiceObject2 = response.json()
+    return promiceObject2
+}).then(finalData => {
+    console.log('Final data is', finalData)
+})
