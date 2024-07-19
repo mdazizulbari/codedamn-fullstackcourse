@@ -355,3 +355,16 @@ console.log(findX)
 friends1.forEach(friends1 => {
     console.log(friends1)
 })
+
+
+
+
+// Template Literals (es6 quotes)
+const person = {
+    name: "Bari",
+    age: 19,
+}
+const aboutMeOld = "My name is "+person.name+" and I am "+person.age+" years old."
+const aboutMeNew = `My name is ${person.name} and I am ${person.age} years old.`
+console.log(aboutMeOld)
+console.log(aboutMeNew)
