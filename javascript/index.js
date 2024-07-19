@@ -220,7 +220,7 @@ console.log(para, para2)
 
 
 
-// Create Element
+// Creating Element and Manipulating attributes
 const increaseBtn = document.querySelector("#increase")
 const decreaseBtn = document.getElementById("decrease")
 const counterElement = document.getElementById("counter")
@@ -243,10 +243,15 @@ function increaseCounter(){
             // li.appendChild(b)
             // li.appendChild(textNode2)
             const li = document.createElement("li")
+            li.setAttribute("data-counter", counter)
             li.innerHTML = "<b>Sentence</b> " + counter
             ulElement.appendChild(li)
 }
+console.log(increaseCounter)
 function decreaseCounter(){
+    const li = ulElement.querySelector('[data-counter="'+counter+'"]')
+    const number = parseInt(li.getAttribute("data-counter"), 10)
+    li.remove()
     counter--
     counterElement.innerText = counter}
 increaseBtn.addEventListener("click", increaseCounter)
