@@ -184,3 +184,35 @@ console.log|(allListItems)
 const para = document.querySelector("#para")
 const para2 = document.getElementById("para")
 console.log(para, para2)
+
+
+// Event Listeners (Counter)
+// const increaseBtn = document.querySelector("#increase")
+// let counter = 0
+// function increaseCounter(){
+//     const counterElement = document.getElementById("counter")
+//     counter++
+//     counterElement.innerText = counter
+// }
+// increaseBtn.addEventListener("click", increaseCounter)
+
+// const decreaseBtn = document.querySelector("#decrease")
+// function decreaseCounter(){
+//     const counterElement = document.getElementById("counter")
+//     counter--
+//     counterElement.innerText = counter
+// }
+// decreaseBtn.addEventListener("click", decreaseCounter)
+
+const increaseBtn = document.querySelector("#increase")
+const decreaseBtn = document.querySelector("#decrease")
+const counterElement = document.getElementById("counter")
+let counter = 0
+function increaseCounter(){
+    counter++
+    counterElement.innerText = counter}
+function decreaseCounter(){
+    counter--
+    counterElement.innerText = counter}
+increaseBtn.addEventListener("click", increaseCounter)
+decreaseBtn.addEventListener("click", decreaseCounter)
