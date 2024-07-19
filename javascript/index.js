@@ -178,3 +178,9 @@ for(i=0; i<allListItems.length; i++){
     listItems.innerText = "Power of All"
 }
 console.log|(allListItems)
+
+
+// Get Element By ID
+const para = document.querySelector("#para")
+const para2 = document.getElementById("para")
+console.log(para, para2)
