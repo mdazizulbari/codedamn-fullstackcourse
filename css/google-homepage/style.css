@@ -1,0 +1,20 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    display: flex;
+    justify-content: end;    
+    margin-right: 20px;
+    margin-top: 20px;
+}
+nav a {
+    margin-right: 20px;
+}
+nav .topimage {
+    width: 22px;
+    height: 22px;
+    border-radius: 50px;
+    background: blue;
+}
