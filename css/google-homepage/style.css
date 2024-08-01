@@ -29,7 +29,7 @@ nav .topimage {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 80vh;
+    height: 85vh;
 }
 
 #searchbar-container{
@@ -51,4 +51,38 @@ nav .topimage {
     padding: 10px 20px;
     border-radius: 10px;
     border: 1px solid gray;
+    background: #26292A;
+    cursor: pointer;
+}
+
+.section-1 {
+    margin: 5px 20px;
+}
+.section-2 {
+    margin: 5px 20px;
+    position: relative;
+}
+/* .footer-left {
+    display: flex;
+}
+.footer-left a {
+    margin-right: 5px;
+}
+.footer-right {
+    display: flex;
+    position: absolute;
+    right: 0;
+}
+.footer-right a {
+    margin-left: 5px;
+} */
+.footer-left {
+    margin-right: 5px;
+}
+.footer-right {
+    margin-left: 5px;
+}
+.footer-right-container {
+    position: absolute;
+    right: 0;
 }
