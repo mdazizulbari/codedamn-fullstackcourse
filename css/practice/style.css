@@ -32,10 +32,21 @@ ul li:nth-child(2){
 
 .hidden-found{
     display: none;
+    background: red;
 }
 .hidden-h1:focus + .hidden-found{
     display: block;
 }
+.hidden-found::before {
+    content: 'Sudo Element Before ';
+    color: yellow;
+}
+.hidden-found::after {
+    content: 'Sudo Element After';
+    color: blue;
+}
+
+
 
 .boxParent {
     border: 1px solid white;
