@@ -12,11 +12,29 @@ body {
     color: var(--text-color);
 }
 h1 {font-size: var(--h1-font-size);}
-p {font-size: var(--p-font-size);}
+p, li {font-size: var(--p-font-size);}
 
 #hello {
     padding: var(--content-padding);
     background: var(--content-bg);
+}
+
+li {
+    background: purple;
+}
+li:hover {
+    background: green;
+}
+ul li:nth-child(2){
+    color: yellow;
+}
+
+
+.hidden-found{
+    display: none;
+}
+.hidden-h1:focus + .hidden-found{
+    display: block;
 }
 
 .boxParent {
