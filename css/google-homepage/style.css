@@ -13,21 +13,42 @@ nav {
     justify-content: end;    
     align-items: center;
     margin-right: 20px;
-    height: 4vh;
+    height: 5vh;
 }
 nav a {
     margin-right: 20px;
 }
 nav .topimage {
-    width: 22px;
-    height: 22px;
-    border-radius: 50%;
-    background: blue;
+    display: flex;
+    align-items: center;
+    height: 50px;
 }
 
 #middle {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 80vh;
+}
+
+#searchbar-container{
+    margin-top: 20px;
+}
+#searchbar{
+    padding: 15px 30px;
+    width: 400px;
+    border: 1px solid gray;
+    outline: 0;
+    border-radius: 50px;
+}
+
+#button-container {
+    margin: 20px;
+}
+.search-buttons {
+    margin: 0 5px;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: 1px solid gray;
 }
