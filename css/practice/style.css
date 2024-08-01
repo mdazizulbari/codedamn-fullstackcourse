@@ -1,3 +1,19 @@
+html {
+    --bg-color: black;
+    --content-padding: 20px;
+    --content-bg: green;
+    --text-color: white;
+}
+body {
+    background: var(--bg-color);
+    color: var(--text-color);
+}
+
+#hello {
+    padding: var(--content-padding);
+    background: var(--content-bg);
+}
+
 .boxParent {
     border: 1px solid black;
     position: relative;
