@@ -4,6 +4,9 @@ setTimeout(() => {
 }, 2000);
 
 let i=0;
-setInterval(() => {
+let intervalId = setInterval(() => {
     document.getElementById(`sec-counter`).innerText = i++
+    if(i == 100){
+        clearInterval(intervalId)
+    }
 }, 1000);
