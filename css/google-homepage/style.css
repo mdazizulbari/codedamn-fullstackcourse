@@ -79,6 +79,9 @@ nav .topimage {
 #button-container {
     margin: 20px;
 }
+.search-buttons:hover{
+    box-shadow: 0 0 2px 2px rgb(72, 72, 72);
+}
 .search-buttons {
     margin: 0 5px;
     padding: 10px 20px;
