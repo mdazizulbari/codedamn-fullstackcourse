@@ -19,15 +19,13 @@ nav {
     display: flex;
     justify-content: end;    
     align-items: center;
-    margin-right: 20px;
     height: 5vh;
+    padding-top: 5px;
 }
 nav a {
-    margin-right: 20px;
+    margin-right: 10px;
 }
 nav .topimage {
-    display: flex;
-    align-items: center;
     height: 50px;
 }
 
