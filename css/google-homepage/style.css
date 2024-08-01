@@ -86,3 +86,26 @@ nav .topimage {
     position: absolute;
     right: 0;
 }
+
+.test {
+    width: 20px;
+    height: 20px;
+    background: white;
+    color: red;
+}
+.testingPa {
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+.testing {
+    display: flex;
+}
+.testing1{
+    display: flex;
+    justify-content: start;
+}
+.testing2{
+    display: flex;
+    justify-content: end;
+}
