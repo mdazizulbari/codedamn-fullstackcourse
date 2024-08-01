@@ -1,0 +1,17 @@
+* {
+    background: #000;
+    color: white;
+    box-sizing: border-box;
+    --default-font-size: 20px;
+    font-size: var(--default-font-size);
+}
+
+.p1 + .p2{
+    color: red;
+}
+.div1 .hi{
+    color: blue;
+}
+.div1 > .hi{
+    color: green;
+}
