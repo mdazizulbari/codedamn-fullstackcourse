@@ -28,3 +28,11 @@ try{
 } catch(err){
     console.log(err)
 }
+
+
+// Blocking the Page interactivity
+const btn = document.querySelector(`.blocking`)
+btn.addEventListener(`click`, blockEventLoop, false)
+function blockEventLoop(){
+    while(true);
+}
