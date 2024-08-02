@@ -36,3 +36,12 @@ btn.addEventListener(`click`, blockEventLoop, false)
 function blockEventLoop(){
     while(true);
 }
+
+
+// Callstacks
+const callstack = document.querySelector(`.callstack`)
+callstack.addEventListener(`click`, callingCallstack, false)
+function callingCallstack(i){
+    console.log(i)
+    callingCallstack(i++)
+}
