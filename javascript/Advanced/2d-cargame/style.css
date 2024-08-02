@@ -3,11 +3,12 @@
 }
 
 .gameArea{
-    background: #000;
+    background-color: black;
     width: 200px;
     height: 100%;
     position: relative;
     margin: auto;
+    overflow: hidden;
 }
 
 .car{
