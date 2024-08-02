@@ -8,7 +8,7 @@ let keys = {
     ArrowRight: false,
     ArrowLeft: false,
 }
-let player = {}
+let player = {speed:5}
 
 startScreen.addEventListener(`click`, start)
 document.addEventListener(`keydown`, pressOn)
@@ -41,10 +41,12 @@ function playGame(){
     console.log(`inplay`)
     let car = document.querySelector(`.car`)
     if(player.start){
-        if(keys.ArrowUp){player.y += player.speed}
-        if(keys.ArrowDown){player.y -= player.speed}
+        if(keys.ArrowUp){player.y -= player.speed}
+        if(keys.ArrowDown){player.y += player.speed}
         if(keys.ArrowLeft){player.x -= player.speed}
         if(keys.ArrowRight){player.x += player.speed}
+        car.style.left = player.x + `px`
+        car.style.top = player.y + `px`
         window.requestAnimationFrame(playGame)
     }
 }
