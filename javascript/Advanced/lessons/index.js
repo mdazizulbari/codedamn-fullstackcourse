@@ -45,3 +45,22 @@ function callingCallstack(i){
     console.log(i)
     callingCallstack(i++)
 }
+
+
+// setting timeouts with and without requesting annimation frame
+let stBtn = document.querySelector(`.stBtn`)
+let st = document.querySelector(`.st`)
+let rafBtn = document.querySelector(`.rafBtn`)
+let raf = document.querySelector(`.raf`)
+function stCounter(i){
+    st.innerText = i
+    setTimeout(() => stCounter(i + 1), 0)
+}
+function rafCounter(i){
+    raf.innerText = i
+    requestAnimationFrame(() => {
+        rafCounter(i + 1)
+    })
+}
+stBtn.addEventListener(`click`, () => stCounter(0), false)
+rafBtn.addEventListener(`click`, () => rafCounter(0), false)
