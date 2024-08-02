@@ -1,6 +1,6 @@
 const score = document.querySelector(`.score`)
 const startScreen = document.querySelector(`.startScreen`)
-const gameAera = document.querySelector(`.gameAera`)
+const gameArea = document.querySelector(`.gameArea`)
 
 let keys = {
     ArrowUp: false,
@@ -14,29 +14,6 @@ startScreen.addEventListener(`click`, start)
 document.addEventListener(`keydown`, pressOn)
 document.addEventListener(`keyup`, pressOff)
 
-function pressOn(e){
-    e.preventDefault()
-    keys[e.key] = true
-    console.log(keys)
-}
-function pressOff(e){
-    e.preventDefault()
-    keys[e.key] = false
-    console.log(keys)
-}
-function start(){
-    startScreen.classList.add(`hide`)
-    gameAera.classList.remove(`hide`)
-    player.start = true
-    window.requestAnimationFrame(playGame)
-    let car = document.createElement(`div`)
-    car.innerHTML = `<p class='car'>Car</p>`
-
-    gameAera.appendChild(car)
-    player.x = car.offsetLeft
-    player.y = car.offsetTop
-    console.log(player)
-}
 function playGame(){
     console.log(`inplay`)
     let car = document.querySelector(`.car`)
@@ -49,4 +26,27 @@ function playGame(){
         car.style.top = player.y + `px`
         window.requestAnimationFrame(playGame)
     }
+}
+function pressOn(e){
+    e.preventDefault()
+    keys[e.key] = true
+    console.log(keys)
+}
+function pressOff(e){
+    e.preventDefault()
+    keys[e.key] = false
+    console.log(keys)
+}
+function start(){
+    startScreen.classList.add(`hide`)
+    gameArea.classList.remove(`hide`)
+    player.start = true
+    window.requestAnimationFrame(playGame)
+    let car = document.createElement(`div`)
+    car.innerHTML = `<p class='car'>Car</p>`
+
+    gameArea.appendChild(car)
+    player.x = car.offsetLeft
+    player.y = car.offsetTop
+    console.log(player)
 }
