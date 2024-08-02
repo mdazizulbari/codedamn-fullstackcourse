@@ -52,6 +52,7 @@ let stBtn = document.querySelector(`.stBtn`)
 let st = document.querySelector(`.st`)
 let rafBtn = document.querySelector(`.rafBtn`)
 let raf = document.querySelector(`.raf`)
+let bothBtn = document.querySelector(`.bothBtn`)
 function stCounter(i){
     st.innerText = i
     setTimeout(() => stCounter(i + 1), 0)
@@ -64,3 +65,4 @@ function rafCounter(i){
 }
 stBtn.addEventListener(`click`, () => stCounter(0), false)
 rafBtn.addEventListener(`click`, () => rafCounter(0), false)
+bothBtn.addEventListener(`click`, () => {rafCounter(0),stCounter(0)}, false)
