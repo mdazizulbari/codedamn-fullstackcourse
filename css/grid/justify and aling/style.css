@@ -1,0 +1,15 @@
+* {
+    background: #000;
+    font-size: 20px;
+    color: white;
+}
+
+
+p {
+    display: grid;
+    place-items: center;
+    height: 96vh;
+    /* justify-content: center;
+    align-items: center; 
+    are equal to place-items*/
+}
