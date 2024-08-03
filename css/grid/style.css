@@ -12,6 +12,7 @@ body{
     display: grid;
     background: yellow;
     grid-template-columns: 1fr 1fr 1fr;
+    /* grid-template-rows: 150px 250px; */
 }
 #grid div{
     width: 100px;
