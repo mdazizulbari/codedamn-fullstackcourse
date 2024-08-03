@@ -1,0 +1,33 @@
+body{
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+    background: #000;
+    color: white;
+}
+
+#grid{
+    display: grid;
+    grid-template-columns: 1fr 20px 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "header header header"
+    "main . sidebar"
+    "footer footer footer"  
+}
+header{
+    background: darkred;
+    grid-area: header;
+}
+main{
+    background: darkblue;
+    grid-area: main;
+}
+aside{
+    background: darkgoldenrod;
+    grid-area: sidebar;
+}
+footer{
+    background: darkgreen;
+    grid-area: footer;
+}
