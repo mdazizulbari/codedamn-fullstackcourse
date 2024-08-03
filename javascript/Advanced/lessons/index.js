@@ -66,3 +66,45 @@ function rafCounter(i){
 stBtn.addEventListener(`click`, () => stCounter(0), false)
 rafBtn.addEventListener(`click`, () => rafCounter(0), false)
 bothBtn.addEventListener(`click`, () => {rafCounter(0),stCounter(0)}, false)
+
+
+// tasks and microtasks
+let clickMe = document.querySelector(`.clickMe`)
+let programmaticClick = document.querySelector(`.programmaticClick`)
+function scheduleWork(){
+    Promise.resolve().then(() => console.log(`#1 m1`))
+    Promise.resolve().then(() => console.log(`#1 m2`))
+    setTimeout(() => {
+        Promise.resolve().then(() => console.log(`#1 m3`))
+        Promise.resolve().then(() => console.log(`#1 m4`))
+        Promise.resolve().then(() => console.log(`#1 m5`))
+        // Promise.resolve().then(() => Promise.resolve().then(() => console.log(`#1 m2`)))
+    }, 0);
+    setTimeout(() => {
+        console.log(`#1 t2`)
+    }, 0);
+    setTimeout(() => {
+        console.log(`#1 t3`)
+    }, 0);
+    console.log(`#1 Hello from main thread`)
+}
+function scheduleWorkAgain(){
+    Promise.resolve().then(() => console.log(`#2 m1`))
+    Promise.resolve().then(() => console.log(`#2 m2`))
+    setTimeout(() => {
+        Promise.resolve().then(() => console.log(`#2 m3`))
+        Promise.resolve().then(() => console.log(`#2 m4`))
+        Promise.resolve().then(() => console.log(`#2 m5`))
+        // Promise.resolve().then(() => Promise.resolve().then(() => console.log(`#2 m2`)))
+    }, 0);
+    setTimeout(() => {
+        console.log(`#2 t2`)
+    }, 0);
+    setTimeout(() => {
+        console.log(`#2 t3`)
+    }, 0);
+    console.log(`#2 Hello from main thread`)
+}
+clickMe.addEventListener(`click`, scheduleWork)
+clickMe.addEventListener(`click`, scheduleWorkAgain)
+programmaticClick.addEventListener(`click`, () => clickMe.click())
