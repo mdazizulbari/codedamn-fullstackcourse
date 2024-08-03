@@ -1,0 +1,25 @@
+body{
+    padding: 10px;
+    margin: 0;
+    font-family: sans-serif;
+    line-height: 1.6;
+    font-size: 18px;
+    background: #000;
+    color: white;
+}
+
+#grid{
+    display: grid;
+    background: yellow;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+#grid div{
+    width: 100px;
+    height: 100px;
+}
+#grid div:nth-child(2n){
+    background: red;
+}
+#grid div:nth-child(2n+1){
+    background: blue;
+}
