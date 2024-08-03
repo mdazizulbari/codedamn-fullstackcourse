@@ -8,26 +8,41 @@ body{
 
 #grid{
     display: grid;
-    grid-template-columns: 1fr 20px 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: auto;
+    gap: 20px 5px;
     grid-template-areas: 
     "header header header"
-    "main . sidebar"
+    "main sidebar ad"
     "footer footer footer"  
 }
 header{
     background: darkred;
     grid-area: header;
+    padding: 50px;
+    font-size: 21px;
 }
 main{
     background: darkblue;
     grid-area: main;
+    padding: 50px;
+    font-size: 21px;
 }
 aside{
     background: darkgoldenrod;
     grid-area: sidebar;
+    padding: 50px;
+    font-size: 21px;
 }
 footer{
     background: darkgreen;
     grid-area: footer;
+    padding: 50px;
+    font-size: 21px;
+}
+.ad{
+    background: darkcyan;
+    grid-area: ad;
+    padding: 50px;
+    font-size: 21px;
 }
